@@ -5,8 +5,8 @@
     <description>Gigya Plugin</description>
     <license>Apache 2.0</license>
     <keywords>Login,Gigya</keywords>
-    <repo>https://github.com/platanus/cordova-gigya.git</repo>
-    <issue>https://github.com/platanus/cordova-gigya/issues</issue>
+    <repo>https://github.com/AgenciaCitrus7/cordova-gigya.git</repo>
+    <issue>https://github.com/AgenciaCitrus7/cordova-gigya/issues</issue>
 
   <js-module name="CordovaGigya" src="www/CordovaGigya.js">
     <clobbers target="cordova.plugins.CordovaGigya" />
@@ -105,6 +105,9 @@
     <source-file src="src/ios/CordovaGigya.m" />
     <framework src="src/ios/GigyaSDK.framework" custom="true"/>
     <framework src="src/ios/FacebookSDK.framework" custom="true"/>
+    <framework src="src/ios/FBSDKCoreKit.framework" custom="true"/>
+    <framework src="src/ios/FBSDKLoginKit.framework" custom="true"/>
+    <framework src="src/ios/FBSDKShareKit.framework" custom="true"/>
   </platform>
 
 </plugin>

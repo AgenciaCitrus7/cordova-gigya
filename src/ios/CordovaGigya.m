@@ -35,7 +35,7 @@
     NSURL* url = [notification object];
 
     if ([url isKindOfClass:[NSURL class]]) {
-        [Gigya handleOpenURL:url sourceApplication:nil annotation:nil];
+        [Gigya handleOpenURL:url application:nil sourceApplication:nil annotation:nil];
     }
     
 }
@@ -50,7 +50,7 @@
 {
     NSString* apiKey = [command.arguments objectAtIndex:0];
     NSString* apiDomain = [command.arguments objectAtIndex:1];
-    [Gigya initWithAPIKey:apiKey APIDomain:apiDomain];
+    [Gigya initWithAPIKey:apiKey application:nil launchOptions:nil APIDomain:apiDomain];
 
 }
 
